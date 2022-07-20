@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;300;400;500;600;700&family=Noto+Serif:wght@400;700&family=Oswald:wght@300;400;500;700&family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,700;1,500&display=swap');
+
+ html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Poppins', sans-serif;
+} 
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/*  */
+ul, li, a {
+    list-style-type: none;
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: auto 80vh 1fr;
+}
+
+#nav-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    padding: 20px 70px;
+    padding-bottom: 0;
+    font-weight: 700;
+    font-size: 15px;
+    cursor: pointer;
+}
+#nav-bar .logo {
+    flex: 1;
+}
+#nav-bar .dhvsu-logo {
+    margin-left: 40px;
+}
+#nav-bar .dhvsu-logo img{
+    height: 60px;
+}
+
+#nav-bar .about, .help, .get-started {
+    margin-left: 40px;
+    
+}
+
+#nav-bar .get-started {
+    border: 2px solid rgb(235, 64, 138);
+    padding: 10px;
+    border-radius: 15px;
+    color: rgb(235, 64, 138);
+    transition: .3s;
+    
+}
+
+#nav-bar .get-started:hover {
+    color: white;
+    background-color: rgb(235, 64, 138);
+    cursor: pointer;
+}
+
+#main {
+    height: 80vh;
+    background-image:
+    linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)),
+    url('images/gender-equality.jpg');
+    background-position: right;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+
+#main .text {
+    max-width: 600px;
+    padding-left: 100px;
+    
+}
+
+#main .text h1 {
+    font-size: 35px;
+    line-height: 1.2;
+    padding-bottom: 13px;
+}
+#main .text .button {
+    margin: 13px auto;
+    padding: 10px;
+    font-weight: 900;
+    font-size: 13px;
+    background-color: #fff;
+    color: rgb(44, 25, 25);
+    border: 1px solid transparent;
+    border-radius: 10px;
+    width: 150px;
+    transition: .4s;
+}
+
+span {
+    color: rgb(145, 5, 5);
+}
+
+#main .text .button:hover {
+    background-color:  rgb(44, 25, 25);
+    color: #fff;
+}
+
+/* <-- form pop up -----> */
+.pop-up-dark {
+    filter: blur(20px);
+    pointer-events: none;
+    user-select: none;
+}
+#student-form  {
+    display: none;
+ }
+
+ #admin-form  {
+    display: none;
+ }
+
+ #student-form a, #admin-form  a {
+    color: rgb(14, 14, 207);
+   
+}
+
+ #student-form span, #admin-form  span {
+    color: rgb(184, 111, 23);
+    text-decoration: underline;
+    cursor: pointer;
+ }
+
+.container-form {
+    position: absolute;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 90%;
+}
+
+.container-form .close {
+    position: absolute;
+    font-size: 28px;
+    font-weight: 700;
+    top:3%;
+    right: 5%;
+    cursor: pointer;
+}
+
+.container-form {
+    background: #fff;
+    width: 410px;
+    padding: 30px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.container-form .text-form {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.container-form {
+    margin-top: -20px;
+}
+
+.container-form .data {
+    height: 45px;
+    margin: 40px 0;
+    width: 100%;
+}
+
+
+form .data input {
+    height: 100%;
+    width: 100%;
+    padding-left: 10px;
+    font-size: 17px;
+    border: 1px solid lightgray;
+}
+form .data label {
+    font-size: 18px;
+}
+
+form .btn {
+    margin: 30px 0;
+    height: 45px;
+    width: 100%;
+
+}
+
+form .btn button {
+    height: 100%;
+    width: 100%;
+    font-size: 18px;
+    background-color: rgb(143, 27, 27);
+    border: transparent;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+form .create h1{
+    font-size: 15px;
+    font-weight: 500;
+}
+
+form .switch-user h1{
+    font-size: 15px;
+    font-weight: 500;
+}
