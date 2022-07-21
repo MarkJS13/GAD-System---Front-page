@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;300;400;500;600;700&family=Noto+Serif:wght@400;700&family=Oswald:wght@300;400;500;700&family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,700;1,500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background:linear-gradient(rgba(53, 51, 51, 0.5) 100%, rgba(173, 159, 159, 0.5)100%),url("./images/dhvsu.jpg");
+    backdrop-filter: blur(4px);
+    background-position: center;
+    background-size: cover;
+
+    
+}
+.container {
+    max-width: 700px;
+    
+    width: 100%;
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 5px;
+}
+
+
+.container .title {
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+    margin-bottom: 25px;
+}
+
+
+.container .title::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    background: linear-gradient(135deg, #a71d30, rgb(235, 64, 138));
+
+}
+
+.container form .user-details {
+    display: flex;
+    flex-wrap: wrap;
+   justify-content: space-between;
+}
+
+form .user-details .input-box {
+    margin-bottom: 15px;
+    width: calc(100% / 2 - 20px);
+}
+
+.user-details .input-box .details {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.user-details .input-box input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+    
+}
+
+.user-details .input-box input:focus,
+.user-details .input-box input:valid {
+    border-color: rgb(235, 64, 138);
+}
+form {
+    position: relative;
+
+}
+
+form .button {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+form .button input {
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    background-color: #a71d30;
+    color: #fff;
+}
+
+.already-have {
+    font-size: 15px;
+    font-weight: 500;
+    padding-bottom: 30px;
+}
+
+.privacy-setting {
+    font-size: 13px;
+}
+
+.privacy-setting span {
+    color: blue;
+}
